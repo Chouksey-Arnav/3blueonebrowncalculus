@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essence of Calculus for ML - 3Blue1Brown</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--text-color);
+        }
+
+        header h1 span {
+            color: var(--accent-color);
+        }
+
+        header p {
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #334155;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            background-color: #000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-info {
+            padding: 1.25rem;
+        }
+
+        .video-info h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.15rem;
+            color: var(--text-color);
+        }
+
+        .video-info p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid #334155;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Essence of <span>Calculus</span></h1>
+        <p>Master the geometric intuitions behind calculus—essential foundations for machine learning, neural networks, and optimization.</p>
+    </header>
+
+    <div class="container">
+        <div class="video-grid">
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/WUvTyaaNkzM" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 1: Essence of calculus</h3>
+                    <p>The core philosophy of calculus: analyzing the relationship between areas, sums, and changes.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/9vKqVkJXQtw" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 2: The paradox of the derivative</h3>
+                    <p>What it actually means to look at a rate of change at a single, instantaneous moment.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/S0_qX4VJhMQ" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 3: Derivative formulas through geometry</h3>
+                    <p>Visual explanations for the power rule, constants, and additions without pure memorization.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/YG15m2VwSjA" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 4: Visualizing the chain rule</h3>
+                    <p>The crucial mechanism behind backpropagation in ML neural networks: composing functions.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/b7FxPsqfkOY" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 5: Exponential derivatives</h3>
+                    <p>Investigating the geometric nature of e and why its derivative is beautifully identical to itself.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/I7Z_N98K0gE" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 6: Implicit differentiation</h3>
+                    <p>How to find the derivative of curves that aren't easily expressed as standard functions.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/RfMk0NjETo8" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 7: Limits, L'Hôpital's rule, and epsilon-delta</h3>
+                    <p>Formalizing the boundaries of infinity and zero that make calculus mathematically rigorous.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/FN7ALfpGxiI" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 8: Integration and the fundamental theorem</h3>
+                    <p>Connecting the calculation of areas under a curve directly to the inverse of taking derivatives.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/BlvK8y0ERv0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 9: Area and slope connection</h3>
+                    <p>A deeper dive into the mechanical bridge linking accumulation and instantaneous change.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/U_85TaXbeIo" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 10: Multivariable chain rule</h3>
+                    <p>How changes cascade through multiple paths—foundational for optimizing loss functions.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/3d6DsjIBzJ4" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 11: Taylor series</h3>
+                    <p>Approximating complex non-linear functions with simpler polynomials around a local point.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/czGLbtJiSsc" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Chapter 12: What they won't teach you in calculus</h3>
+                    <p>Concluding thoughts on the boundaries of calculus and alternative ways to think about change.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Videos by <a href="https://www.youtube.com/@3blue1brown" target="_blank">3Blue1Brown</a>. Built for personal study.</p>
+    </footer>
+
+</body>
+</html>
